@@ -65,7 +65,7 @@ nav {
   display: flex;
   width: 80%;
   margin: auto;
-  min-height: 90vh;
+  min-height: 80vh;
   align-items: center;
 }
 
@@ -122,6 +122,7 @@ nav {
   img {
     height: 60vh;
     filter: drop-shadow(0px 5px 3px var(--black));
+    animation: drop 1.5s ease;
   }
 }
 
@@ -150,4 +151,24 @@ nav {
   bottom: 0;
   left: 20%;
   height: 40%;
+}
+
+.laptop-select {
+  width: 15%;
+  display: flex;
+  justify-content: space-around;
+  position: absolute;
+  right: 26%;
+}
+
+@keyframes drop {
+  0% {
+    opacity: 0;
+    transform: translateY(-80px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
