@@ -1,3 +1,12 @@
+:root {
+  --white: #fff;
+  --grey1: #6f6f89;
+  --grey2: #5f5f79;
+  --grey3: #494964;
+  --black: #000;
+  --pink: #c36cbb;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -53,7 +62,7 @@ nav {
 }
 
 .nav-link {
-  color: #5f5f79;
+  color: var(--grey2);
   font-size: 1.125rem;
   text-decoration: none;
 }
@@ -88,8 +97,8 @@ nav {
 .intro-text h1 {
   font-size: 2.75rem;
   font-weight: 500;
-  background: -webkit-gradient(linear, left top, right top, from(#494964), to(#6f6f89));
-  background: linear-gradient(to right, #494964, #6f6f89);
+  background: -webkit-gradient(linear, left top, right top, from(var(--grey3)), to(var(--grey1)));
+  background: linear-gradient(to right, var(--grey3), var(--grey1));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -111,19 +120,19 @@ nav {
   width: 9.375rem;
   height: 3.125rem;
   cursor: pointer;
-  border-radius: .4rem;
+  border-radius: 0.4rem;
 }
 
 .cta-select {
-  border: 2px solid #c36cbb;
+  border: 2px solid var(--pink);
   background: transparent;
-  color: #c36cbb;
+  color: var(--pink);
 }
 
 .cta-add {
-  background: #c36cbb;
+  background: var(--pink);
   border: none;
-  color: #fff;
+  color: var(--white);
   margin: 2rem 0 0 2rem;
 }
 
@@ -135,7 +144,34 @@ nav {
 
 .cover img {
   height: 60vh;
-  -webkit-filter: drop-shadow(0px 5px 3px #000);
-          filter: drop-shadow(0px 5px 3px #000);
+  -webkit-filter: drop-shadow(0px 5px 3px var(--black));
+          filter: drop-shadow(0px 5px 3px var(--black));
+}
+
+.big-circle,
+.mid-circle,
+.small-circle {
+  position: absolute;
+  z-index: -1;
+}
+
+.big-circle {
+  top: 0;
+  right: 0;
+  height: 80%;
+  opacity: 0.5;
+}
+
+.mid-circle {
+  top: 30%;
+  right: 30%;
+  height: 60%;
+  opacity: 0.4;
+}
+
+.small-circle {
+  bottom: 0;
+  left: 20%;
+  height: 40%;
 }
 /*# sourceMappingURL=style.css.map */
