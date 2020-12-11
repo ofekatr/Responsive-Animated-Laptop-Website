@@ -1,0 +1,49 @@
+@media only screen and (max-width: 1024px) {
+    .presentation {
+      flex-direction: column;
+    }
+  
+    .introduction {
+      margin-top: 5vh;
+      text-align: center;
+    }
+  
+    .intro-text {
+      h1 {
+        font-size: 2rem;
+      }
+  
+      p {
+        font-size: 1.125rem;
+      }
+    }
+  
+    .cta {
+      padding: 0.625rem 0 0 0;
+    }
+  
+    .laptop-select {
+      bottom: 5%;
+      right: 50%;
+      width: 50%;
+      transform: translate(50%, 5%);
+    }
+  
+    .cover {
+      img {
+        height: 80%;
+      }
+    }
+  
+    .big-circle,
+    .mid-circle,
+    .small-circle {
+      opacity: 0.2;
+    }
+  }
+  
+  @media only screen and (max-width: 420px) {
+    .cta-add {
+      margin-left: 0;
+    }
+  }

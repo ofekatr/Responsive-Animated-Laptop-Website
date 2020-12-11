@@ -1,0 +1,26 @@
+.big-circle,
+.mid-circle,
+.small-circle {
+  position: absolute;
+  z-index: -1;
+}
+
+.big-circle {
+  top: 0;
+  right: 0;
+  height: 80%;
+  opacity: 0.5;
+}
+
+.mid-circle {
+  top: 30%;
+  right: 30%;
+  height: 60%;
+  opacity: 0.4;
+}
+
+.small-circle {
+  bottom: 0;
+  left: 20%;
+  height: 40%;
+}
